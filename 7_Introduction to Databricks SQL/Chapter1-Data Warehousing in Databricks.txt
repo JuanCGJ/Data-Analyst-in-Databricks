@@ -1,1 +1,30 @@
-nn
+                                              Motivation
+Data Warehouses
+  Great for SQL workloads
+  Typically expensive
+  Proprietary technologies
+  Limited capabilities and integrations
+
+Data Lakes
+  Great for non-SQL workloads
+  Cost effective, lackluster performance
+  Open-source technologies
+  Unlimited capabilities
+
+                                      Data warehousing in the Lakehouse
+Benefits
+Single architecture for all workloads
+Flexibility and ownership with data
+Open-source technologies
+    Delta
+    ANSI SQL
+Cost effective solution
+
+Business Intelligence ecosystem
+Integrate directly with your BI tool of choice
+    Partner Connect
+    Databricks Connect
+    JDBC / ODBC
+Performance and scalability
+Keep users where they are
+
