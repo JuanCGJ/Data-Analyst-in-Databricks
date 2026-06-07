@@ -1,1 +1,74 @@
-nn
+                                    Ingesting Data
+      Lakeflow Connect
+Built-in connectors for ingesting data
+  Databases
+  SaaS Applications
+Creates pipelines to keep data up to date
+
+      Data upload
+Manually upload your files
+  CSV, Parquet, etc.
+Quickly create new Delta tables
+Great for ad hoc data upload
+
+
+Upload data manually
+**In this exercise, we'll practice a simple data ingestion process 
+to get familiar with bringing data into Databricks. **
+
+Ingesting data is a key first step in preparing for analysis. Using the Data Ingestion section, 
+we can quickly upload local files and make them available for immediate exploration and ad hoc analysis.
+
+1. Navigate to the Data Ingestion section of the platform.
+Using the Create or modify table option, you will bring in the CSV file vendor_data from the local environment.
+The CSV file is in the following location: Desktop > Datasets.
+
+2. Navigate to the Data Ingestion section of the platform.
+Using the Create or modify table option, you will bring in the CSV file vendor_data from the local environment.
+The CSV file is in the following location: Desktop > Datasets.
+
+3. Navigate to the Data Ingestion section of the platform.
+Using the Create or modify table option, you will bring in the CSV file vendor_data from the local environment.
+The CSV file is in the following location: Desktop > Datasets.
+
+4. How many columns of data were uploaded into your table?
+R//: 7
+
+
+
+Using COPY INTO
+In this exercise, we will practice using the COPY INTO command to ingest additional data for analysis.
+
+The manual data upload was a great solution for creating a net-new data table, but what should we do when there is additional data we want to add to a Delta table? This is where the COPY INTO command comes in handy.
+
+1. Navigate to the Catalog and select the default schema in the databricks_ws_... catalog.
+Create a new volume using the Create option in the top right corner of the screen.
+Make sure to select Managed volume and call it "managed_vendor_data". This will create a folder in cloud storage where you can upload data files directly and manage access through the Unity Catalog.
+
+2. Within the new volume created, upload the CSV file vendor\_data\_extra, which is located in Desktop > Datasets folder.
+After uploading the file, in the Overview section, copy the file path for this upload using the menu to the right of the file name.
+
+
+/Volumes/databricks_ws_e9f291e8_693d_4620_876d_e925f3ad8e29/default/managed_vendor_data
+
+3. Navigate to the SQL Editor and write the below query.
+This query will use the COPY INTO command, and will ingest our newly uploaded file into our already existing vendor\_data table that you created in the previous exercise.
+
+
+COPY INTO databricks_ws_e9f291e8_693d_4620_876d_e925f3ad8e29.default.vendor_data
+FROM '/Volumes/databricks_ws_e9f291e8_693d_4620_876d_e925f3ad8e29/default/managed_vendor_data'
+FILEFORMAT = CSV
+COPY_OPTIONS ('mergeSchema' = 'true')
+
+4. How many rows were written into the table from our file?
+R//: 1001
+
+Question?
+Leveraging Auto Loader
+So far, we have shown how to ingest individual files, but how can we do this more efficiently and intelligently? This is where Auto Loader enters the conversation, as it provides the capability to incrementally process new files as they land in a specified location.
+
+Which of the following statements best describes how Auto Loader works when ingesting new data?
+R: Auto Loader processes each data file exactly once, and incrementally adds them to the target table.
+
+
+
