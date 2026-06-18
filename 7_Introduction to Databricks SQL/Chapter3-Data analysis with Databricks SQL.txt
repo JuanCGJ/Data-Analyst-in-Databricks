@@ -183,3 +183,6 @@ Save the visualization, and look at what the results tell you.
 5.Which of the following best describes the results from our last visualization "Churn risk claim amounts"?
 R:There are many more "Low Risk" customers, but the average claim amount of the "High Risk" customers is just as high as the "Low Risk" customers.
 
+
+
+
