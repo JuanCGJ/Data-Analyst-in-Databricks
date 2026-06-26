@@ -184,5 +184,135 @@ Save the visualization, and look at what the results tell you.
 R:There are many more "Low Risk" customers, but the average claim amount of the "High Risk" customers is just as high as the "Low Risk" customers.
 
 
+                                          Creating an analytics application
+
+Filters and parameters
+Filters
+Creates a sub-selection of the resulting rows based on the specified value or criteria
+Functions the same as a WHERE clause in a SQL query
+  Text-based, numerical, date ranges, dropdowns
+
+Parameters
+Arbitrary text values that can be injected into a SQL query
+Often can be used as a filter
+Also able to inject other text values
+  Dynamically add fields to query
+  Change the behavior of a function
+
+                                            Dashboards in Databricks SQL
+Collection of visualizations from multiplequeries and tables
+Allows for a more dynamic and userfriendly experience for understanding data
+  Leverage existing queries / visualizations
+  Create new queries and visualizations ad hoc
+  Bring in advanced logic with AI / LLMs
+Shareable through a URL
+
+                                            Partner Connect
+Leverage an extensive network of partner technologies with your lakehouse architecture
+Directly connect your favorite BI tool
+  Scalability and performance of compute with Databricks
+  User-friendly and powerful BI capabilities with Power BI, Tableau, etc.
+Keep users with the tools they are familiar with
+
+The role of Partner Connect
+Which of the following best describes how Partner Connect fits into the broader lakehouse vision?
+R:  Partner Connect allows for end users to connect their favorite tool to Databricks compute, leveraging
+the compute power and access data through Unity Catalog governance.
+Perfect! This is exactly the role of Partner Connect: extending the reach of the Databricks lakehouse into other technologies, while maintaining all the benefits of a single lakehouse platform.
 
 
+
+Adding filters to dashboards
+Dashboards are a great way to present your data in a visual and intuitive manner. 
+In this exercise, we will begin by providing a larger dataset to our dashboard, and allow 
+our users to interactively select the shown data through the use of a dashboard filter. 
+These filters function like WHERE clauses in the background, but are much more user-friendly.
+
+1. 
+Navigate to the Dashboards section of the Databricks UI.
+Create a new dashboard using the Create Dashboard option.
+Name the new dashboard "Agent Analysis Dashboard".
+
+2. 
+Navigate to the Data tab of the dashboard. Click + Create from SQL to create a 
+new dataset by joining the insurance and employee tables together.
+You will only need the AGENT_NAME field from the employee table.
+Call this new table "Insurance Agents" and hit Run.
+
+SELECT I.*,
+    E.AGENT_NAME
+FROM INSURANCE I 
+LEFT JOIN employee E 
+ON E.AGENT_ID = I.AGENT_ID;
+
+3. 
+Now, click on a page tab (e.g., Untitled page 1) to open the canvas. 
+Add the following widgets to the dashboard:
+
+A text box widget to the top of the dashboard with the title "Agent-level Insurance Claims Analysis".
+A bar chart showing the total CLAIM_AMOUNT by INSURANCE_TYPE.
+A histogram showing the distribution of the AGE of our customers.
+
+4.
+Now, add a filter widget to the dashboard. Have this widget be a date range picker based on the REPORT_DT field.
+
+5.
+What is the total submitted claim amount (in $M) for Property insurance between July 1, 2020 and August 30, 2020?
+R: 5.65M
+
+
+
+Using parameters in queries
+Filters are a great way to add in a sub-selection capability to our dashboards, 
+but can be somewhat limited depending on what we are trying to accomplish.
+In this exercise, we will explore a basic example of how to use a parameter in our dashboard 
+to better provide interactivity to our end users
+
+1. 
+Navigate to the Dashboards section and open your "Agent Analysis Dashboard" you created in the previous exercise.
+Reset all of the filters previously applied to the dashboard.
+
+2.
+Open the Data tab of the dashboard and go into your Insurance Agent query.
+Add a WHERE clause to the bottom of your query. This WHERE clause should use the LIKE operator to compare the AGENT_NAME field against a string.
+Add a parameter and call it "agentName". To update the name of your parameter, change the text after the : in your query after you insert the parameter.
+Put this parameter in between two % symbols using the concat() function so we have wildcard operators in our search.
+Here is an example of what this function would look like: concat('%', :parameter, '%')
+Press Run to run your query.
+
+SELECT I.*,
+    E.AGENT_NAME
+FROM INSURANCE I 
+LEFT JOIN employee E 
+ON E.AGENT_ID = I.AGENT_ID
+WHERE E.AGENT_NAME LIKE concat('%', :agentName, '%');
+
+3.
+Navigate to a page tab on your dashboard and add a new filter widget to the canvas.
+Put the agentName parameter in this filter.
+
+4.For all agents with "Steve" in their name, which `INSURANCE_TYPE` has the highest claim amount?
+R: Property
+Correct! You correctly inserted a parameter into your query, allowing for more sophisticated filtering logic to your overall dashboard.
+
+
+
+Create an executive dashboard
+As a data analyst on the insurance operations team, you have been asked to 
+build a dashboard for executive leadership. The dashboard should summarize 
+claim volumes and amounts across different states, and allow leadership to filter the data by insurance type.
+
+1.  Navigate to the Dashboards section and create a new dashboard called "Leadership KPI Dashboard".
+
+2. In the Data tab of the dashboard, click + Add data source. In the dialog, switch to the All tab, then navigate to your catalog and default schema to add the insurance table as a dataset
+
+3. Click on a page tab to open the canvas, then create the following visualizations from the insurance dataset:
+
+  A bar chart showing the total CLAIM_AMOUNT by STATE.
+  A counter widget showing the total number of claims.
+
+4. Add a filter widget to the dashboard for INSURANCE_TYPE, allowing executives to focus on a specific insurance category across all visualizations.
+
+5. The executive team likes the dashboard but wants to quickly see three headline numbers — total claims, total claim amount, and average premium — without scrolling or filtering. Which addition to the dashboard would best meet this requirement?
+R: Three Counter widgets at the top of the dashboard, each displaying one of the headline numbers.
+Correct! Counter widgets display a single value prominently, making them ideal for KPIs that need to be understood at a glance.
