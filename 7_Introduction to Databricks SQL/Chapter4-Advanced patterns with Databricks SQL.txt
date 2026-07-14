@@ -1,1 +1,43 @@
-nnn
+                  Common data engineering patterns
+Handling incoming data
+
+Incremental append
+  Add all new data to end of existing table
+      INSERT INTO students
+      TABLE visiting_students;
+
+Change Data Capture (CDC)
+  Integrates data into existing table
+      MERGE INTO target USING source
+      ON target.key = source.key
+      WHEN MATCHED THEN UPDATE SET *;
+
+
+Data optimizations
+
+OPTIMIZE
+  Compact subset of data together
+  Reduces the "small file problem"
+
+Z-ORDER
+  Similar to indexing for database systems
+  Co-locates related data to same files
+  Can reduce time to read data
+
+Examples
+    > OPTIMIZE table_name;
+    
+    > OPTIMIZE table_name
+    WHERE date >= '2024-01-01';
+    
+    > OPTIMIZE table_name
+    WHERE date >= current_timestamp()
+    - INTERVAL 1 day
+    ZORDER BY (eventType);
+
+
+--
+Virtual environment error, excercise couldnt be done
+Video: Updating coffe sales data - Excercises: Optimizing data with SQL, Using Insert, Using Merge
+---
+
