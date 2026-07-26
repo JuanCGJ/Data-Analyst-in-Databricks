@@ -1,1 +1,31 @@
-nn
+                                        Creating and managing tables
+Create and manage
+  Databricks databases group related tables for organization.
+  Creating a database sets up a scalable structure.
+  Organized data aids access and management.
+  Tables store structured data for queries.
+
+Effective management
+  Effective management involves querying, updating, and deleting data.
+  Deletion should be done carefully to avoid data loss.
+  Safe deletion practices include data backup before removal.
+
+Using the LOCATION keyword
+  Databricks automatically manages table storage locations.
+  Default setup simplifies data storage management.
+  Custom storage paths can be set using the LOCATION keyword.
+  Flexibility is important for compliance, cost, or performance needs
+
+Overriding the default storage
+  LOCATION overrides default storage.
+  Store data in external cloud locations:
+    examples: AWS S3, Azure Blob Storage
+  Useful when integrating with existing infrastructure.
+  Ensures compliance for sensitive data.
+
+Dynamic data management
+  LOCATION supports dynamic data management.
+  Move data easily if regulations or costs change.
+  Relocate data seamlessly without disruption.
+  Maintain structure and workflow during changes.
+
