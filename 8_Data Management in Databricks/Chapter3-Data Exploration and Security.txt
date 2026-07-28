@@ -1,1 +1,30 @@
-nn
+                                Data exploration with Data Explorer
+
+Your data GPS
+  Locate and understand data tables for analysis alignment.
+  Enable secure, efficient data exploration and compliance.
+
+Navigating the Data Explorer
+User-friendly navigation through databases,tables, and views.
+Quick data previews and structural insights
+Example:
+  Preview customer transaction datasets toensure consistency
+Verifies data formats and key field integrity
+
+Securing your data with ease
+  Acts like a gatekeeper controlling access to a vault
+  Streamlined access control and permissions management
+  Aligns with organizational data governance standards
+
+Ownership matters
+  Quickly identify and manage tableownership
+  Assign or transfer ownership as needed
+  Table owners act like dataset "stewards"
+  Owners ensure data access, quality, and compliance
+
+Data quality accountability
+  Table owners manage access and data quality
+  Regular permission reviews and usage monitoring
+  Ongoing oversight key to data quality and compliance
+
+
