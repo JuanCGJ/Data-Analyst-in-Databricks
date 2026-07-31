@@ -1,1 +1,48 @@
-nn
+What is data visualization?
+Data visualization is the practice of representing data in a visual format.
+  Formats: Includes charts, graphs, maps, and infographics.
+Main goal:
+  Make complex data more accessible.
+  Enhance understanding and usability.
+
+Why we need data visualization?
+Benefits:
+  Simplifies complex data
+  Highlights key patterns and trends
+  Enhances visual processing
+  Improves understanding and retention
+  Supports decision-making and planning
+  Boosts data accessibility and collaboration
+
+                                    Key statistical concepts for visualization
+Discrete versus continuous data
+  Discrete data: countable, distinct values
+  Continuous data: Measurable quantities with a range of values
+Descriptive statistics
+  Summarize data to reveal trends, patterns, and outliers
+  Examples: mean, median, frequency distributions
+
+Databricks for data visualization
+Benefits:
+  Efficiently handling large datasets
+  Built-in visualization options
+  Interactive dashboards
+  Collaborative environment
+
+What are map visualizations?
+  Visual representation of data on a map
+  Key tool for analyzing geographical data
+  Useful for identifying spatial patterns and
+  trends
+
+Examples - Choropleth Maps
+Choropleth Maps
+  Uses color gradients to represent data density or values
+  Ideal for comparing data across regions
+  Highlights regional differences clearly
+
+Marker Maps
+  Represents individual data points with markers
+  Ideal for visualizing specific locations
+  Provides clear, location-based insights
+
