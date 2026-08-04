@@ -1,1 +1,29 @@
-nn
+                                    What is a dashboard?
+Is a space for multiple visualizations
+Displays related data together
+Simplifies complex information
+Helps compare metrics at a glance
+
+Dashboards can:
+  Identify trends quickly
+  Track real-time data
+  Make faster, informed decisions
+  Support business strategy
+
+                              Key components of a dashboard
+Components:
+Bar Charts: compare values
+Line Charts: show trends
+Maps: visualize locations
+Counter Plots: show key performance
+indicators (KPIs)
+Filters and tools: customize views
+
+                          Dashboards bring insights together
+Dashboards
+  Create clear views of your data
+  Combine visuals to tell a story
+Next
+  Learn how to create dashboards
+  Customize layout and style
+
