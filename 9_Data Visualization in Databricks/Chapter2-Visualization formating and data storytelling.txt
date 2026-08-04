@@ -1,1 +1,69 @@
-nn
+                                Why format your visualizations?
+Not good
+  The rainbow color theme makes the chart difficult to understand
+  3D imagery makes the data challenging to decipher
+Good
+  Consistent bar type
+  Simple color scheme
+  Clear data labels
+
+Clear and descriptive axes (Good practice)
+
+The role of color
+  Distinguishes data series or categories
+  Enhances readability and comparison
+
+Importance of data labels
+  Provides precise information at a glance
+  Helps in quick data interpretation
+
+Summary of effective formatting
+  Functionality over aesthetics
+  Clarity
+  Highlighting insights
+  Audience engagement
+
+                                                  Data storytelling
+What is data storytelling?
+  Crafting narratives from data
+  Combining insights with visualizations
+Purpose:
+  Make complex data accessible
+  Engage and inform your audience
+Why it matters:
+  Transforms raw data into insights
+  Enhances decision-making
+
+Before: showing data
+  Cluttered line chart, difficult to interpret
+  Raw data without context
+After: storytelling
+  Clear narrative highlighting key insights
+  Simple bar chart emphasizing important data points
+
+                                      The role of data visualizations in storytelling
+Bar charts: compare quantities across categories
+Line charts: show trends over time
+Pie charts: display proportions and part-towhole relationships
+Scatter plots: show relationships and correlations
+Heat maps: reveal patterns and intensity of data
+Histograms: show the distribution of numerical data
+Area charts: highlight changes over time with stacked data
+
+                                        Understanding statistical distributions
+Why they matter
+Reveal patterns in data
+Highlight central tendencies: mean, median, mode
+Show spread: range, variance, standard deviation
+Identify shape: skewness, kurtosis
+
+                                            Creating Customizable Tables
+Purpose of Customizable Tables:
+  Tailor presentation to specific needs
+  Highlight key insights clearly
+Key features:
+  Formatting options
+  Column and row adjustments
+  Sorting and filtering
+  Data labels
+
