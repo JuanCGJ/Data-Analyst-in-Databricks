@@ -27,3 +27,24 @@ Next
   Learn how to create dashboards
   Customize layout and style
 
+                          Why do dashboards need refreshing
+Ensure current data is displayed
+Reflect real-time changes
+Improve decision-making accuracy
+Avoid outdated insights
+Track dynamic business performance
+
+                      Benefits of regular dashboard refreshes
+Enable real-time monitoring
+Prevent old or misleading data
+Enhance visibility of key trends
+Spot opportunities quickly
+Adapt to shifting data trends
+
+                      Refresh frequency and best practices
+Set automatic refresh intervals
+Balance frequency to avoid lags
+Refresh relevant sections only
+Monitor for system performance
+Prevent manual update overload
+
