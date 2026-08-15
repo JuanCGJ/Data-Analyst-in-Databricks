@@ -1,1 +1,60 @@
-nn
+                                    Managing localdashboards
+Cloning dashboards
+Purpose of cloning:
+  Create duplicates of existing dashboardsfor experimentation and modifications
+Benefits:
+  Allows safe exploration of changes withoutaffecting the original dashboard
+  Facilitates version control by keepingprevious iterations intact
+
+Exporting dashboards
+Purpose of exporting:
+  Save dashboards in various formats forexternal use and sharing
+Benefits:
+  Enables presentation of insights outside theprimary workspace
+  Allows for offline access and distribution ofdashboard content
+
+Deleting dashboards
+Purpose of deleting:
+  Remove unnecessary or outdated dashboards from the workspace
+Benefits:
+  Helps maintain a clean and organized dashboard environment
+  Reduces clutter, making it easier to findrelevant dashboards
+
+Summary of local dashboard management 
+  Cloning helps in creating backups. 
+  Exporting allows for easy sharing. 
+  Deleting keeps your workspace organized.
+
+
+                                Sharing dashboards within the workspace 
+Share with users and groups in yourDatabricks workspace 
+  Permission levels: View, Edit, Manage
+  Access to both draft and published versions
+  Inherit permissions from enclosing folders
+
+Sharing dashboards with account members 
+  View-only access for users not in the workspace 
+  Granting access to account members with embedded credentials 
+  Administrator registration required for account members 
+  Options for sharing: specific users, groups, or everyone in the account
+
+                              Managing alerts and notifications
+Alerts: Keep users informed of importantchanges in data.
+
+Databricks SQL alerts
+  Periodically run queries to evaluate definedconditions.
+  Send notifications if a condition is met.
+Setting up alerts: 
+  Define conditions for alertsbased on metrics or thresholds.
+Custom notifications: 
+  Tailor alerts to specificusers or groups.
+
+                          Summary of effective dashboard sharing
+Sharing dashboards:
+  Fosters team collaboration and informed decision-making.
+  Share with users/groups in your Databricks workspace.
+  Assign permissions: View, Edit, and Manage. 
+
+Managing alerts:
+  Set alerts for significant data changes.
+  Customize notifications for key business metrics.
