@@ -25,7 +25,7 @@ Each module folder below contains its own **showcase notebook** — a portfolio-
 | 1 | [`1_Understanding Data Engineering`](./1_Understanding%20Data%20Engineering) | Understanding Data Engineering | [`Understanding_Data_Engineering_Summary.ipynb`](./1_Understanding%20Data%20Engineering/Understanding_Data_Engineering_Summary.ipynb) |
 | 2 | [`2_Introduction to Databricks`](./2_Introduction%20to%20Databricks) | Introduction to Databricks | [`Databricks_Fundamentals_Showcase.ipynb`](./2_Introduction%20to%20Databricks/Databricks_Fundamentals_Showcase.ipynb) |
 | 3 | [`3_Introduction to SQL`](./3_Introduction%20to%20SQL) | Introduction to SQL | [`Introduction_to_SQL_Showcase.ipynb`](./3_Introduction%20to%20SQL/Introduction_to_SQL_Showcase.ipynb) |
-| 4 | [`4_Intermediate SQL`](./4_Intermediate%20SQL) | Intermediate SQL | *pending* |
+| 4 | [`4_Intermediate SQL`](./4_Intermediate%20SQL) | Intermediate SQL | [`Intermediate_SQL_Showcase.ipynb`](./4_Intermediate%20SQL/Intermediate_SQL_Showcase.ipynb) |
 | 5 | [`5_Joining Data in SQL`](./5_Joining%20Data%20in%20SQL) | Joining Data in SQL | [`Joining_Data_In_SQL.ipynb`](./5_Joining%20Data%20in%20SQL/Joining_Data_In_SQL.ipynb) |
 | 6 | [`6_Data Manipulation in SQL`](./6_Data%20Manipulation%20in%20SQL) | Data Manipulation in SQL | [`Data_Manipulation_In_SQL.ipynb`](./6_Data%20Manipulation%20in%20SQL/Data_Manipulation_In_SQL.ipynb) |
 | 7 | [`7_Introduction to Databricks SQL`](./7_Introduction%20to%20Databricks%20SQL) | Introduction to Databricks SQL | [`Databricks_SQL_Showcase.ipynb`](./7_Introduction%20to%20Databricks%20SQL/Databricks_SQL_Showcase.ipynb) |
@@ -60,7 +60,7 @@ SQL fundamentals: what a relational database and a table are, naming conventions
 ### 📌 Module 4 — Intermediate SQL
 > Folder: [`4_Intermediate SQL`](./4_Intermediate%20SQL)
 
-Filtering records, aggregate functions, and sorting/grouping data with PostgreSQL, practiced on a films/reviews/people dataset. Course material (slides + resources) is in place; the showcase notebook for this module is still pending.
+Querying, filtering, aggregate functions, and sorting/grouping data with PostgreSQL, practiced on a films/reviews/people dataset — from `COUNT()` and `DISTINCT` through `WHERE`/`LIKE`/`IN`/`NULL` filtering, `AVG()`/`SUM()`/`ROUND()`, and `GROUP BY`/`HAVING`.
 
 ---
 
